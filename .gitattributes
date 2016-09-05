@@ -18,6 +18,7 @@
 /apertium-fin-fkv.fkv-fin.t3x -text
 /autogen.sh -text
 /configure.ac -text
+dev/punctuation.lexc -text
 dev/transfer.txt -text
 /fin-fkv.prob -text svneol=unset#unset
 /fkv-fin.prob -text svneol=unset#unset
