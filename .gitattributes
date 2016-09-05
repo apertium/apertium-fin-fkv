@@ -10,16 +10,12 @@
 /apertium-fin-fkv.fin-fkv.t1x -text
 /apertium-fin-fkv.fin-fkv.t2x -text
 /apertium-fin-fkv.fin-fkv.t3x -text
-/apertium-fin-fkv.fin.lexc -text
-/apertium-fin-fkv.fin.twol -text
 /apertium-fin-fkv.fkv-fin.dix -text
 /apertium-fin-fkv.fkv-fin.lrx -text
 /apertium-fin-fkv.fkv-fin.rlx -text
 /apertium-fin-fkv.fkv-fin.t1x -text
 /apertium-fin-fkv.fkv-fin.t2x -text
 /apertium-fin-fkv.fkv-fin.t3x -text
-/apertium-fin-fkv.fkv.lexc -text
-/apertium-fin-fkv.fkv.twol -text
 /autogen.sh -text
 /configure.ac -text
 dev/transfer.txt -text
