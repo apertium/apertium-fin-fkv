@@ -1,0 +1,30 @@
+* text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/Makefile.am -text
+/NEWS -text
+/README -text
+/apertium-fkv-fin.fin-fkv.lrx -text
+/apertium-fkv-fin.fin-fkv.rlx -text
+/apertium-fkv-fin.fin-fkv.t1x -text
+/apertium-fkv-fin.fin-fkv.t2x -text
+/apertium-fkv-fin.fin-fkv.t3x -text
+/apertium-fkv-fin.fin.lexc -text
+/apertium-fkv-fin.fin.twol -text
+/apertium-fkv-fin.fkv-fin.dix -text
+/apertium-fkv-fin.fkv-fin.lrx -text
+/apertium-fkv-fin.fkv-fin.rlx -text
+/apertium-fkv-fin.fkv-fin.t1x -text
+/apertium-fkv-fin.fkv-fin.t2x -text
+/apertium-fkv-fin.fkv-fin.t3x -text
+/apertium-fkv-fin.fkv.lexc -text
+/apertium-fkv-fin.fkv.twol -text
+/autogen.sh -text
+/configure.ac -text
+dev/transfer.txt -text
+/fin-fkv.prob -text svneol=unset#unset
+/fkv-fin.prob -text svneol=unset#unset
+/modes.xml -text
+texts/sailor.fin.txt -text
+texts/sailor.fkv.txt -text

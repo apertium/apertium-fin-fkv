@@ -1,0 +1,820 @@
+
+Multichar_Symbols
+
+! POS
+%<n%>      ! Noun
+%<np%>     ! Proper noun
+%<vblex%>  ! Verb
+%<vaux%>   ! Auxliary verb
+%<adj%>    ! Adjective
+%<adv%>    ! Adverb
+%<pr%>     ! Adposition
+%<cnjcoo%> ! Co-ordinating conjunction
+%<cnjsub%> ! Sub-ordinating conjunction
+%<num%>    ! Numeral
+
+
+! Number
+%<sg%>  ! Singular
+%<pl%>  ! Plural
+
+! Person
+%<p1%>  ! First
+%<p2%>  ! Second
+%<p3%>  ! Third
+
+! Person related
+%<ant%>  ! Anthroponym (name of a person)
+%<pers%> ! Personal (for pronouns)
+%<mf%>   ! Masculin or feminin
+%<m%>    ! Masculin
+%<f%>    ! Feminin
+%<nt%>   ! Neuter
+
+! For vowel harmony
+%{A%}   ! {A} = a or ä
+%{U%}   ! {U} = u or y
+
+! Cases
+%<nom%> ! Nominative
+%<acc%> ! Accusative
+%<par%> ! Partitive
+%<gen%> ! Genitive
+%<ine%> ! Inessive
+%<ela%> ! Elative
+%<ill%> ! Illative
+%<ade%> ! Adessive
+%<abl%> ! Ablative
+%<all%> ! Ellative
+%<ins%> ! Instructive
+%<tra%> ! Translative
+%<abe%> ! Abessive
+%<com%> ! Comitative
+
+! Verb symbols
+%<inf%>  ! Infinitive
+%<actv%> ! Active voice
+%<pasv%> ! Passive voice
+%<pres%> ! Present
+%<past%> ! Past
+%<conneg%> ! Part of negation
+
+! Punctuation
+%<sent%>      ! Sentence marker
+%<guio%>      ! Hyphen
+%<cm%>        ! Comma
+%<apos%>      ! Apostrophe
+%<rquot%>     ! Quote marker (right hand side)
+%<lquot%>     ! Quote marker (left hand side)
+%<rpar%>      ! Parenthetical marker (right hand side)
+%<lpar%>      ! Parenthetical marker (left hand side)
+
+
+LEXICON Root
+
+Nouns ;
+Verbs ;
+Adjectives ;
+Adverbs ;
+Pronouns ;
+Conjunctions ;
+Adpositions ;
+Other ;
+ProperNouns ;
+Numerals ;
+Punctuation ;
+
+
+LEXICON Clitics
+ki%<clitic%>:ki # ; ! "kin"
+haan%<clitic%>:h%{A%}%{A%}n # ; ! "hAn"
+pa%<clitic%>:p%{A%}%{A%} # ; ! "pA"
+# ;
+
+
+LEXICON O1
+%<other%>: Clitics ;
+
+LEXICON Other
+enhään O1 ; ! "enää"
+niin O1 ; ! "niin"
+kiini O1 ; ! "kiinni"
+aivan O1 ; ! "aivan"
+kauvas O1 ; ! "kauas"
+
+
+LEXICON CC
+
+%<cnjcoo%>: # ;
+
+LEXICON Conjunctions
+ja%<cnjcoo%>:ja # ;
+tahi%<cnjcoo%>:tahi # ;
+
+ette%<cnjsub%>:ette # ; ! "that"
+jos%<cnjsub%>:jos # ; ! "if"
+ko%<cnjsub%>:ko # ; ! "?"
+mutta%<cnjsub%>:mutta # ; ! "but"
+vaikka%<cnjsub%>:vaikka # ; ! "even though"
+
+joka CC ; ! "joka"
+jokka CC ; ! "jotka"
+jotta CC ; ! "jotta"
+kunnes CC ; ! "kunnes"
+mikä CC ; ! "mikä"
+millä CC ; ! "millä"
+niin CC ; ! "niin"
+vaan CC ; ! "vaan"
+
+LEXICON PP
+
+%<pr%>: # ;
+
+! Really just all appositions and leftovers
+LEXICON Adpositions
+
+alla PP ; ! "alla"
+eđestä PP ; ! "edestä"
+jälkhiin PP ; ! "jälkeen"
+kans PP ; ! "kanssa"
+keskelä PP ; ! "keskellä"
+kohti PP ; ! "kohti"
+likelä PP ; ! "lähellä"
+läpi PP ; ! "läpi"
+mukhaan PP ; ! "mukaan"
+myöten PP ; ! "myöten"
+päälä PP ; ! "päällä
+sisälä PP ; ! "sisällä"
+taka PP ; ! "takaa"
+takana PP ; ! "takana"
+takkaa PP ; ! "takaa"
+tykö PP ; ! "luokse"
+tykönä PP ; ! "luona"
+tähđen PP ; ! "takia"
+yli PP ; ! "yli"
+ylös PP ; ! "ylös"
+! better place?
+ko PP ; ! "kuin";
+
+!
+! Paradigms for pronouns
+!
+
+LEXICON P_MIE
+%<nom%>:e Clitics ;
+%<gen%>:nun Clitics ;
+%<par%>:nnuu Clitics ;
+%<all%>:nule Clitics ;
+
+LEXICON P_SE
+%<nom%>:se Clitics ;
+%<gen%>:sen Clitics ;
+%<par%>:sitä Clitics ;
+%<ade%>:sillä Clitics ;
+%<all%>:sille Clitics ;
+%<abl%>:siltä Clitics ;
+%<ill%>:siihen Clitics ;
+
+LEXICON P_MET
+%<nom%>:t Clitics ;
+%<gen%>:iđän Clitics ;
+%<ade%>:ilä Clitics ;
+
+LEXICON P_HÄN
+%<nom%>: Clitics ;
+%<par%>:tä Clitics ;
+%<gen%>:en Clitics ;
+%<ade%>:elä Clitics ;
+
+LEXICON P_TÄMÄ
+%<nom%>:mä Clitics ;
+%<gen%>:män Clitics ;
+
+LEXICON ADV
+
+%<adv%>: # ;
+
+
+!
+! Paradigms for nouns
+!
+
+! Generic noun until inflection is figured
+LEXICON N1
+%<n%>%<sg%>%<nom%>: # ;
+
+LEXICON N3
+
+%<n%>%<sg%>%<nom%>:%{A%} # ;
+%<n%>%<sg%>%<par%>:%{A%}t%{A%} # ;
+%<n%>%<sg%>%<gen%>:%{A%}n # ;
+%<n%>%<sg%>%<all%>:%{A%}le # ;
+%<n%>%<sg%>%<ess%>:%{A%}n%{A%} # ;
+%<n%>%<sg%>%<ill%>:ihin # ;
+
+LEXICON N_PUU
+%<n%>%<sg%>%<nom%>:%{U%} # ;
+%<n%>%<sg%>%<par%>:%{U%}t%{A%} # ;
+%<n%>%<sg%>%<gen%>:%{U%}n # ;
+%<n%>%<sg%>%<all%>:%{U%}le # ;
+%<n%>%<sg%>%<ess%>:%{U%}n%{A%} # ;
+%<n%>%<sg%>%<ill%>:ihin # ;
+
+LEXICON N4
+
+%<n%>%<sg%>%<nom%>:ta # ;
+%<n%>%<sg%>%<par%>:ttaa # ;
+%<n%>%<sg%>%<ill%>:thaan # ;
+%<n%>%<sg%>%<ela%>:nasta # ;
+
+LEXICON N6
+
+%<n%>%<sg%>%<nom%>:et # ;
+%<n%>%<sg%>%<par%>:hettä # ;
+%<n%>%<sg%>%<ela%>:heestä # ;
+%<n%>%<sg%>%<ade%>:heelä # ;
+
+! Regular nounds ending in vowel
+LEXICON N7
+%<n%>%<sg%>%<nom%>: # ;
+%<n%>%<sg%>%<par%>:%{A%} # ;
+%<n%>%<sg%>%<gen%>:n # ;
+%<n%>%<sg%>%<tra%>:ksi # ;
+%<n%>%<sg%>%<ess%>:n%{A%} # ;
+
+%<n%>%<sg%>%<ela%>:st%{A%} # ;
+%<n%>%<sg%>%<abl%>:lt%{A%} # ;
+%<n%>%<sg%>%<ela%>:st%{A%} # ;
+%<n%>%<sg%>%<ine%>:ss%{A%} # ;
+%<n%>%<sg%>%<all%>:le # ;
+%<n%>%<sg%>%<ade%>:l%{A%} # ;
+%<n%>%<pl%>%<nom%>:t # ;
+%<n%>%<pl%>%<ela%>:ist%{A%} # ;
+%<n%>%<pl%>%<abl%>:ilt%{A%} # ;
+%<n%>%<pl%>%<ine%>:iss%{A%} # ;
+%<n%>%<pl%>%<all%>:ile # ;
+%<n%>%<pl%>%<ade%>:il%{A%} # ;
+
+! Regular words ending in consonant
+LEXICON N_NIKLAS
+%<sg%>%<nom%>: # ;
+%<sg%>%<par%>:i%{A%} # ;
+%<sg%>%<gen%>:in # ;
+%<sg%>%<tra%>:iksi # ;
+%<sg%>%<ess%>:in%{A%} # ;
+%<sg%>%<ela%>:ist%{A%} # ;
+%<sg%>%<abl%>:ilt%{A%} # ;
+%<sg%>%<ela%>:ist%{A%} # ;
+%<sg%>%<ine%>:iss%{A%} # ;
+%<sg%>%<all%>:ile # ;
+%<sg%>%<ade%>:il%{A%} # ;
+%<pl%>%<nom%>:it # ;
+%<pl%>%<ela%>:eist%{A%} # ;
+%<pl%>%<abl%>:eilt%{A%} # ;
+%<pl%>%<ine%>:eiss%{A%} # ;
+%<pl%>%<all%>:eile # ;
+%<pl%>%<ade%>:eil%{A%} # ;
+
+LEXICON N7a
+
+%<n%>%<sg%>%<nom%>:a # ;
+%<n%>%<sg%>%<ela%>:asta # ;
+%<n%>%<sg%>%<abl%>:alta # ;
+%<n%>%<sg%>%<ine%>:assa # ;
+%<n%>%<sg%>%<par%>:aa # ;
+%<n%>%<sg%>%<all%>:ale # ;
+%<n%>%<sg%>%<ade%>:ala # ;
+%<n%>%<sg%>%<gen%>:an # ;
+%<n%>%<pl%>%<par%>:oi # ;
+%<n%>%<pl%>%<all%>:oile # ;
+%<n%>%<pl%>%<ela%>:oista # ;
+
+LEXICON N_SUUNTA
+%<n%>%<sg%>%<nom%>:ta # ;
+%<n%>%<sg%>%<ela%>:nasta # ;
+%<n%>%<sg%>%<abl%>:nalta # ;
+%<n%>%<sg%>%<ine%>:taan # ;
+%<n%>%<sg%>%<par%>:taa # ;
+%<n%>%<sg%>%<all%>:ale # ;
+%<n%>%<sg%>%<ade%>:ala # ;
+%<n%>%<sg%>%<gen%>:an # ;
+
+
+LEXICON N8
+
+%<n%>%<sg%>%<nom%>: # ;
+%<n%>%<sg%>%<par%>:o # ;
+%<n%>%<pl%>%<nom%>:t # ;
+%<n%>%<pl%>%<gen%>:in # ; ! ?
+%<n%>%<sg%>%<gen%>:n # ;
+%<n%>%<pl%>%<ade%>:ila # ;
+
+LEXICON N9
+
+%<n%>%<sg%>%<nom%>:s # ;
+%<n%>%<sg%>%<ess%>:henä # ;
+
+LEXICON N10
+
+%<n%>%<sg%>%<nom%>:nen # ;
+%<n%>%<pl%>%<nom%>:set # ;
+
+LEXICON N11
+
+%<n%>%<sg%>%<nom%>:ta # ;
+%<n%>%<sg%>%<ade%>:lala # ;
+
+LEXICON N12
+
+%<n%>%<sg%>%<nom%>:ka # ;
+%<n%>%<pl%>%<all%>:oile # ;
+
+LEXICON N13
+
+%<n%>%<sg%>%<nom%>:si # ;
+%<n%>%<sg%>%<ade%>:đelä # ;
+%<n%>%<sg%>%<ine%>:đessä # ;
+%<n%>%<pl%>%<ade%>:silä # ;
+
+LEXICON N14
+
+%<n%>%<sg%>%<nom%>:s # ;
+%<n%>%<sg%>%<gen%>:ksen # ;
+
+LEXICON N15
+
+%<n%>%<sg%>%<nom%>:a # ;
+%<n%>%<sg%>%<par%>:aa # ;
+%<n%>%<sg%>%<gen%>:haan # ;
+
+LEXICON N16
+
+%<n%>%<sg%>%<nom%>:i # ;
+%<n%>%<sg%>%<ill%>:hiin # ;
+
+LEXICON N17
+
+%<n%>%<sg%>%<nom%>:si # ;
+%<n%>%<sg%>%<par%>:tta # ;
+
+LEXICON N18
+
+%<n%>%<sg%>%<nom%>:a # ;
+%<n%>%<sg%>%<par%>:kaa # ;
+
+LEXICON N19
+
+%<n%>%<sg%>%<nom%>:i # ;
+%<n%>%<sg%>%<par%>:t%{A%} # ;
+%<n%>%<sg%>%<gen%>:en # ;
+%<n%>%<sg%>%<ine%>:ess%{A%} # ;
+%<n%>%<sg%>%<ela%>:est%{A%} # ;
+%<n%>%<sg%>%<ade%>:el%{A%} # ;
+%<n%>%<sg%>%<all%>:ele # ;
+
+LEXICON N20
+%<n%>%<sg%>%<nom%>:vesi # ;
+%<n%>%<sg%>%<par%>:vettä # ;
+
+LEXICON N_AIKA
+%<n%>%<sg%>%<nom%>:aika # ;
+%<n%>%<sg%>%<gen%>:aijan # ;
+
+!
+! Paradigms for verbs
+!
+
+LEXICON V_OLLA
+%<inf%>:olla # ;
+%<actv%>%<pres%>%<conneg%>:ole # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:olemhaan # ;
+%<actv%>%<pres%>%<p1%>%<sg%>:olen # ;
+%<actv%>%<pres%>%<p3%>%<sg%>:on # ;
+%<actv%>%<past%>%<p1%>%<sg%>:olin # ;
+%<actv%>%<past%>%<p3%>%<sg%>:oli # ;
+%<actv%>%<past%>%<p1%>%<pl%>:olima # ;
+%<actv%>%<past%>%<p3%>%<pl%>:olthiin # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:ollu # ;
+%<actv%>%<past%>%<sg%>%<conneg%>:ollu # ;
+%<actv%>%<past%>%<pl%>%<conneg%>:olheet # ;
+
+LEXICON V_TULLA
+%<inf%>:la # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:emhaan # ;
+%<actv%>%<pres%>%<p1%>%<sg%>:en # ;
+%<actv%>%<pres%>%<p3%>%<sg%>:ee # ;
+%<actv%>%<past%>%<p1%>%<sg%>:in # ;
+%<actv%>%<past%>%<p3%>%<sg%>:i # ;
+%<actv%>%<past%>%<p1%>%<pl%>:im%{A%} # ;
+%<actv%>%<past%>%<p3%>%<pl%>:thiin # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:lu # ;
+
+LEXICON V_ASETTUA
+%<inf%>:uut # ;
+%<actv%>%<past%>%<p3%>%<sg%>:tui # ;
+
+LEXICON V_MUUTTUUT
+%<inf%>:tuut # ;
+%<actv%>%<past%>%<p3%>%<sg%>:tui # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ine%>:tumassa # ;
+
+LEXICON V_HÄYTTYYT
+%<inf%>:häyttyyt # ;
+%<actv%>%<past%>%<p3%>%<sg%>:häytyi # ;
+%<actv%>%<past%>%<p3%>%<pl%>:häyđythiin # ;
+
+LEXICON V_TAPAHTUUT
+%<inf%>:htuut # ;
+%<actv%>%<past%>%<p3%>%<sg%>:ttui # ;
+
+LEXICON V_ALKKAAT
+%<inf%>:kaat # ;
+%<actv%>%<past%>%<p3%>%<sg%>:oi # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:amhaan # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:anu # ;
+%<actv%>%<pp%>%<pl%>%<nom%>:aneet # ;
+
+LEXICON V_SATTAAT
+%<inf%>:taat # ;
+%<actv%>%<past%>%<p3%>%<sg%>:oi # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:amhaan # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:anu # ;
+%<actv%>%<pp%>%<pl%>%<nom%>:aneet # ;
+
+LEXICON V_ANTTAAT
+%<inf%>:ttaat # ;
+%<actv%>%<past%>%<p3%>%<sg%>:toi # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:tamhaan # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:tanu # ;
+%<actv%>%<pp%>%<pl%>%<nom%>:taneet # ;
+%<actv%>%<past%>%<p3%>%<pl%>:nethiin # ;
+
+LEXICON V_NAURAAT
+%<inf%>:aat # ;
+%<actv%>%<past%>%<p3%>%<sg%>:oi # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:amhaan # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:anu # ;
+%<actv%>%<pp%>%<pl%>%<nom%>:aneet # ;
+
+LEXICON V_SANNOOT
+%<inf%>:oot # ;
+%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:mhaan # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:nu # ;
+%<actv%>%<pp%>%<pl%>%<nom%>:neet # ;
+
+%<actv%>%<pres%>%<p1%>%<sg%>:n # ;
+%<actv%>%<pres%>%<p2%>%<sg%>:t # ;
+%<actv%>%<pres%>%<p3%>%<sg%>: # ;
+%<actv%>%<pres%>%<p1%>%<pl%>:ma # ;
+%<actv%>%<past%>%<p1%>%<sg%>:in # ;
+%<actv%>%<past%>%<p2%>%<sg%>:it # ;
+%<actv%>%<past%>%<p3%>%<sg%>:i # ;
+%<actv%>%<past%>%<p1%>%<pl%>:ima # ;
+
+LEXICON V_OTTAA
+%<inf%>:t%{A%}%{A%}t # ;
+%<actv%>%<pres%>%<p1%>%<sg%>:%{A%}n # ;
+%<actv%>%<pres%>%<p3%>%<sg%>:t%{A%}%{A%} # ;
+%<actv%>%<past%>%<p1%>%<sg%>:in # ;
+%<actv%>%<past%>%<p3%>%<sg%>:ti # ;
+%<actv%>%<past%>%<p3%>%<pl%>:ethiin # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:tanu # ;
+%<actv%>%<pp%>%<pl%>%<nom%>:taneet # ;
+
+LEXICON V4
+%<vblex%>%<inf%>:nä # ;
+%<vblex%>%<1sg%>%<present%>:en # ;
+%<vblex%>%<past%>%<1sg%>:in # ;
+%<vblex%>%<past%>%<3sg%>:i # ;
+%<vblex%>%<past%>%<1pl%>:imä # ;
+%<vblex%>%<past%>%<3pl%>:thiin # ;
+%<vblex%>%<actv%>%<pres%>%<inf%>%<sg%>%<ill%>:emhään # ;
+!
+%<vblex%>%<tu-part%>%<sg%>:ny # ;
+%<vblex%>%<tu-part%>%<pl%>:neet # ;
+
+LEXICON V_NÄHDÄ
+%<inf%>:hđä # ;
+%<actv%>%<pres%>%<p1%>%<sg%>:jen # ;
+%<actv%>%<pres%>%<p2%>%<sg%>:jet # ;
+%<actv%>%<past%>%<p1%>%<sg%>:jin # ;
+%<actv%>%<past%>%<p3%>%<sg%>:ki # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:hny # ;
+%<actv%>%<pp%>%<pl%>%<nom%>:hneet # ;
+
+LEXICON V5
+%<vblex%>%<inf%>: # ;
+
+LEXICON V_HUUTTAAT
+%<inf%>:ttaat # ;
+%<actv%>%<past%>%<p3%>%<sg%>:si # ;
+
+LEXICON V_TUNTEA
+%<actv%>%<past%>%<p1%>%<sg%>:sin # ;
+%<actv%>%<past%>%<p1%>%<pl%>:sima # ;
+
+LEXICON V_PÖLÄTÄ
+%<inf%>:ätä # ;
+%<actv%>%<past%>%<p1%>%<sg%>:käsin # ;
+%<actv%>%<past%>%<p3%>%<sg%>:käs # ;
+
+LEXICON V_POIMIA
+
+%<inf%>:it # ;
+%<actv%>%<past%>%<p1%>%<sg%>:sin # ;
+%<actv%>%<past%>%<p1%>%<pl%>:sim%{A%} # ;
+%<actv%>%<past%>%<p3%>%<pl%>:thiin # ;
+
+LEXICON V_HOKSATA
+%<inf%>:ta # ;
+%<actv%>%<past%>%<p1%>%<sg%>:sin # ;
+%<actv%>%<past%>%<p1%>%<pl%>:sim%{A%} # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:nu # ;
+
+LEXICON V_ISTUA
+%<inf%>:%{A%} # ;
+%<actv%>%<past%>%<p1%>%<sg%>:in # ;
+%<actv%>%<past%>%<p1%>%<pl%>:im%{A%} # ;
+
+LEXICON V_PITTÄÄT
+%<inf%>:ttäät # ;
+%<actv%>%<pres%>%<p1%>%<sg%>:đän # ;
+%<actv%>%<pres%>%<p2%>%<sg%>:đät # ;
+%<actv%>%<past%>%<p1%>%<sg%>:đin # ;
+%<actv%>%<pp%>%<sg%>%<nom%>:täny # ;
+
+LEXICON V_VIEDÄ
+%<inf%>:vieđä # ;
+%<actv%>%<past%>%<p1%>%<pl%>:veimä # ;
+
+LEXICON V_SAADA
+%<inf%>:ađa # ;
+%<actv%>%<past%>%<p3%>%<sg%>:i # ;
+%<actv%>%<past%>%<p3%>%<pl%>:atethiin # ;
+
+LEXICON V_MYYDÄ
+%<inf%>:yđä # ;
+%<actv%>%<past%>%<p3%>%<sg%>:i # ;
+%<actv%>%<past%>%<p3%>%<pl%>:ythiin # ;
+
+LEXICON V_KULKEET
+%<inf%>:keet # ;
+%<actv%>%<past%>%<p1%>%<pl%>:jima # ;
+
+LEXICON V_NEG
+ei%<vblex%>%<neg%>%<p1%>%<sg%>:en # ;
+ei%<vblex%>%<neg%>%<p2%>%<sg%>:et # ;
+ei%<vblex%>%<neg%>%<p3%>%<sg%>:ei # ;
+ei%<vblex%>%<neg%>%<p1%>%<pl%>:emmä # ;
+
+LEXICON A1
+%<adj%>%<sg%>%<nom%>: # ;
+%<adj%>%<sg%>%<par%>:%{A%} # ;
+%<adj%>%<sg%>%<gen%>:n # ;
+%<adj%>%<sg%>%<ade%>:l%{A%} # ;
+%<adj%>%<sg%>%<all%>:le # ;
+%<adj%>%<sg%>%<tra%>:ksi # ;
+%<adj%>%<sg%>%<ela%>:st%{A%} # ;
+
+%<adj%>%<sg%>%<comp%>:mpi # ;
+%<adj%>%<sg%>%<slat%>:in # ;
+%<adj%>%<pl%>:t # ;
+%<adj%>%<pl%>%<comp%>:mat # ;
+
+LEXICON A2
+%<adj%>%<sg%>:i # ;
+%<adj%>%<sg%>%<tra%>:eksi # ;
+%<adj%>%<sg%>%<ade%>:el%{A%} # ;
+
+LEXICON A3
+%<adj%>%<sg%>:a # ;
+%<adj%>%<sg%>%<tra%>:aksi # ;
+%<adj%>%<sg%>%<comp%>:empi # ;
+
+LEXICON A_NEN
+%<adj%>%<sg%>%<nom%>:nen # ;
+%<adj%>%<sg%>%<gen%>:sen # ;
+
+LEXICON Nouns
+
+aika: N_AIKA ; ! "time"
+faari N7 ; ! "vaari"
+fierva N7 ; ! "ebb"
+! FIXME: hieta
+hietta:hiett N7a ; ! "hiekka"
+hilla:hill N7a ; ! "hilla"
+! FIXME: dictionary says histuuria
+histooria N8 ; ! "historia"
+hytä N7 ; ! "tupa"
+ihminen:ihmi N10 ; ! "ihminen"
+ilma:ilm N7a ; ! "ilma"
+ilta:il N11 ; ! "ilta"
+jalka:jal N12 ; ! "jalka"
+kauhu N7 ; ! "kauhu"
+kauppias N1 ; ! "kauppias"
+kesä N1 ; ! "kesä"
+kolmasosa N7 ; ! "kolmasosa"
+koppa N4 ; ! "koppa?"
+koti:kot N16 ; ! "koti"
+käsi:kä N13 ; ! "käsi"
+linja N7 ; ! "linja"
+luppaus:luppau N14 ; ! "lupaus"
+maa:ma N3 ; ! "maa"
+maarieppa N1 ; ! "landlubber"
+marja:marj N7a ; ! "marja"
+matka:matk N7a ; ! "matka"
+meri:mer N19 ; ! "meri"
+mieli:miel N19 ; ! "mieli"
+ulkopuoli:ulkopuol N19 ; ! "ulkopuoli"
+miila:miil N7a ; ! "maili"
+morssii N1 ; ! "morsian"
+niemi:niem N19 ; ! "niemi"
+paaro N8 ; ! "aalto"
+vuono N8 ; ! "vuono"
+pimmeys N1 ; ! "pimeys"
+pohja N7 ; ! "pohja"
+purjetmies:purjetmie N9 ; ! "??"
+ranta:ran N4 ; ! "ranta"
+ruoka:ruok N18 ; ! "ruoka"
+ruori N7 ; ! "ruori"
+saari:saar N19 ; ! "saari"
+seppä N7 ; ! "seppä"
+silloinen:silloi N10 ; ! "silloinen"
+sneeseili N7 ; ! "sneeseili"
+suoja:suoj N15 ; ! "suoja"
+suora N1 ; ! "suora"
+suunta N_SUUNTA ; ! "suunta"
+systeemi N7 ; ! "systeemi"
+syy:sy N_PUU ; ! "syy"
+sää:sä N3 ; ! "sää"
+tunturi:tuntur N16 ; ! "tunturi"
+tuuli:tuul N19 ; ! "tuuli"
+vaimo N7 ; ! "vaimo"
+velipuoli:velipuol N19 ; ! "velipuoli"
+venet:ven N6 ; ! "vene"
+vesi: N20 ; ! "vesi"
+vuosi:vuo N17 ; ! "vuosi"
+
+LEXICON Verbs
+anttaat%<vblex%>:an V_ANTTAAT ; ! "give"
+alkkaat%<vblex%>:alk V_ALKKAAT ; ! "begin"
+asettua%<vblex%>:aset V_ASETTUA ; ! "settle down"
+hoksata%<vblex%>:hoksa V_HOKSATA ; ! "understand"
+huuttaat%<vblex%>:huu V_HUUTTAAT ; ! "scream"
+häyttyyt%<vaux%>: V_HÄYTTYYT ; ! "must"
+istua%<vblex%>:istu V_ISTUA ; ! "istua"
+kaattuut%<vblex%>:kaat V_MUUTTUUT ; ! "fall"
+kulkeet%<vblex%>:kul V_KULKEET ; ! "travel with method"
+kysyä%<vblex%>:kysy V_ISTUA ; ! "kysyä"
+käyttäät%<vblex%>:käyt V_OTTAA ; ! "use"
+mennä:men V4 ; ! "mennä"
+muuttuut%<vblex%>:muut V_MUUTTUUT ; ! "change (intransitive)"
+myyđä%<vblex%>:my V_MYYDÄ ; ! "sell"
+nauraat%<vblex%>:naur V_NAURAAT ; ! "laugh"
+nousta V5 ; ! "nousta"
+nähđä%<vblex%>:nä V_NÄHDÄ ; ! "nähdä"
+näyttää%<vblex%>:näyt V4 ; ! "näyttää"
+olla%<vblex%>: V_OLLA ; ! "be"
+ottaat%<vblex%>:ot V_OTTAA ; ! "take"
+ođottaat%<vblex%>:ođot V_OTTAA ; ! "wait"
+osata%<vblex%>:osa V_HOKSATA ; ! "canknow"
+pittäät%<vblex%>:pi V_PITTÄÄT ; ! "luulla"
+puhalttaat%<vblex%>:puhal V_HUUTTAAT ; ! "blow"
+purjettiit%<vblex%>:purjetti V_POIMIA ; ! "sail"
+päästä V5 ; ! "päästä"
+päättäät%<vblex%>:päät V_OTTAA ; ! "decide"
+poimiit%<vblex%>:poimi V_POIMIA ; ! "pick"
+pölätä%<vblex%>:pöl V_PÖLÄTÄ ; ! "be afraid"
+saađa%<vblex%>:sa V_SAADA ; ! "get"
+saađa%<vaux%>:sa V_SAADA ; ! "can"
+sannoot%<vblex%>:sano V_SANNOOT ; ! "say"
+sattaat%<vblex%>:sat V_SATTAAT ; ! "rain"
+seilata%<vblex%>:seila V_HOKSATA; ! "sail"
+suunnata:suunta V_HOKSATA ; ! "take a direction"
+tapahtuut%<vblex%>:tapa V_TAPAHTUUT ; ! "happen"
+tiettäät%<vblex%>:tie V_PITTÄÄT ; ! "know"
+tulla%<vblex%>:tul V_TULLA ; ! "come"
+tuntea%<vblex%>:tun V_TUNTEA ; ! "feel, know someone"
+tuulla%<vblex%>:tuul V_TULLA ; ! "(wind) blow"
+uiđa V5 ; ! "uida"
+vieđä%<vblex%>: V_VIEDÄ ; ! "to take something somewhere"
+0 V_NEG ; ! "ei"
+
+LEXICON Adjectives
+fiini A1 ; ! "fiini"
+friski A1 ; ! "reipas"
+hirveä A1 ; ! "hirveä"
+huono A1 ; ! "huono"
+hurja A1 ; ! "hurja"
+jyrkkä A1 ; ! "jyrkkä"
+kankkee A1 ; ! "kankea"
+kevvyt A1 ; ! "kevyt"
+korkkee A1 ; ! "korkea"
+kova A1 ; ! "kova"
+kuiva A1 ; ! "kuiva"
+mahđoton A1 ; ! "mahdoton"
+matala A1 ; ! "matala"
+noppea A1 ; ! "nopea"
+pieni:pien A2 ; ! "pieni"
+rohki A1 ; ! "rohkea"
+sikkari A1 ; ! "varma"
+siro A1 ; ! "siro"
+suora A1 ; ! "suora"
+vakava A1 ; ! "vakava"
+valmis A1 ; ! "valmis"
+vanha:vanh A3 ; ! "vanha"
+viiminen:viimi A_NEN ; ! "last"
+vähän A1 ; ! "vähän"
+
+enämen%<adv%>%<comp%>:enämen # ; ! "enempää"
+enämppää%<adv%>%<comp%>:enämppää # ; ! "enempää"
+
+LEXICON ProperNouns
+Hans%<np%>%<ant%>%<m%>:Hans N_NIKLAS ;
+Bull%<np%>%<ant%>%<m%>:Bull N_NIKLAS ;
+Taunusaari%<np%>%:Taunisaar N19 ;
+Sjånes%<np%>:Sjånes N_NIKLAS ;
+Prännä%<np%>:Prännä N7 ;
+Jumala%<np%>:Jumala N7 ;
+Tyyryniemi%<np%>:Tyyryniem N19 ;
+Sløbukta%<np%>:Sløbukta N7 ;
+
+LEXICON Pronouns
+
+! Personal
+mie%<prn%>%<pers%>%<p1%>%<sg%>:mi    P_MIE ; ! "minä"
+sie%<prn%>%<pers%>%<p2%>%<sg%>:si    P_MIE ; ! "sinä"
+se%<prn%>%<pers%>%<p3%>%<nt%>%<sg%>: P_SE  ; ! "se"
+hän%<prn%>%<pers%>%<p3%>%<sg%>:hän   P_HÄN ; ! "hän"
+met%<prn%>%<pers%>%<p1%>%<pl%>:me    P_MET ; ! "me"
+tet%<prn%>%<pers%>%<p2%>%<pl%>:te    P_MET ; ! "te"
+het%<prn%>%<pers%>%<p3%>%<pl%>:he    P_MET ; ! "he"
+
+! Demonstrative
+tämä%<prn%>%<sg%>:tä P_TÄMÄ ; ! "tämä"
+
+! Reflex
+itte%<prn%>:itte # ; ! "itse"
+
+! These have name too
+miksi%<prn%>:miksi # ; ! "miksi"
+mithään%<prn%>%<sg%>%<par%>:mithään # ; ! "mitään"
+
+
+LEXICON Adverbs
+ennen ADV ; ! "ennen2
+hiljemin ADV ; ! "myöhemmin"
+jo ADV ; ! "jo"
+koskhaan ADV ; ! "koskaan"
+niinpä ADV ; ! "niinpä"
+nyt ADV ; ! "nyt"
+piian ADV ; ! "pian"
+pikkuisen ADV ; ! "pikkuisen"
+sielä ADV ; ! "siellä"
+silloin ADV ; ! "silloin"
+siltikhään ADV ; ! "siltikään"
+sinne ADV ; ! "to there"
+suorhaan ADV ; ! "suoraan"
+suunile ADV ; ! "suunnilleen"
+tyhä ADV ; ! "yhä"
+
+LEXICON Numerals
+yksi%<num%>%<sg%>%<nom%>:yksi # ; ! "one"
+kaksi%<num%>%<sg%>%<nom%>:kaksi # ; ! "two"
+kolme%<num%>%<sg%>%<nom%>:kolme # ; ! "three"
+nelje%<num%>%<sg%>%<nom%>:nelje # ; ! "four"
+viis%<num%>%<sg%>%<nom%>:viis # ; ! "five"
+kuus%<num%>%<sg%>%<nom%>:kuus # ; ! "six"
+seittemen%<num%>%<sg%>%<nom%>:seittemen # ; ! "seven"
+kahđeksen%<num%>%<sg%>%<nom%>:kahđeksen # ; ! "eight"
+yhđeksen%<num%>%<sg%>%<nom%>:yhđeksen # ; ! "eight"
+
+
+13%<num%>:13 # ;
+
+LEXICON Punctuation
+%.%<sent%>:%. # ;
+%.%.%<sent%>:%.%. # ;
+%.%.%.%<sent%>:%.%.%. # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%’%<apos%>:%’ # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%»%<lquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%”%<lquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+%\%<sent%>:%\ # ;
+%/%<sent%>:%/ # ;
