@@ -5,12 +5,12 @@
 /Makefile.am -text
 /NEWS -text
 /README -text
+/apertium-fin-fkv.fin-fkv.dix -text
 /apertium-fin-fkv.fin-fkv.lrx -text
 /apertium-fin-fkv.fin-fkv.rlx -text
 /apertium-fin-fkv.fin-fkv.t1x -text
 /apertium-fin-fkv.fin-fkv.t2x -text
 /apertium-fin-fkv.fin-fkv.t3x -text
-/apertium-fin-fkv.fkv-fin.dix -text
 /apertium-fin-fkv.fkv-fin.lrx -text
 /apertium-fin-fkv.fkv-fin.rlx -text
 /apertium-fin-fkv.fkv-fin.t1x -text
