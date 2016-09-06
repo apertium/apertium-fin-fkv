@@ -60,7 +60,7 @@ TARGETS_COMMON = \
 	hfst-concatenate -1 .deps/$(PREFIX2).autobil.nonplussed -2 .deps/$(PREFIX2).autobil.postplus.0,1 -o $@
 
 ###############################################################################
-## Finnish→Estonian monolingual transducers
+## Finnish→Kven monolingual transducers
 ###############################################################################
 
 # punctuation
@@ -71,11 +71,11 @@ TARGETS_COMMON = \
 .deps/punctuation.RL.hfst: .deps/.d
 	hfst-lexc dev/punctuation.lexc -o $@
 
-# fin->est mor
-# apertium-fin-est.fin-est.LR.att.gz
+# fin->fkv mor
+# apertium-fin-fkv.fin-fkv.LR.att.gz
 # .deps/$(LANG1).automorf-missingpunct.hfst: $(AP_SRC1)/apertium-und.$(LANG1)-und.LR.att.gz .deps/.d
 # 	$(ZCAT) $< | hfst-txt2fst > $@
-.deps/$(LANG1).automorf-missingpunct.hfst: $(AP_SRC1)/apertium-fin-est.$(LANG1)-est.LR.att.gz .deps/.d
+.deps/$(LANG1).automorf-missingpunct.hfst: $(AP_SRC1)/apertium-fin-fkv.$(LANG1)-fkv.LR.att.gz .deps/.d
 	$(ZCAT) $< | hfst-txt2fst > $@
 
 .deps/$(LANG1).automorf.hfst: .deps/$(LANG1).automorf-missingpunct.hfst .deps/punctuation.LR.hfst
@@ -90,23 +90,23 @@ $(PREFIX1).automorf.hfst: .deps/$(PREFIX1).automorf-trimmed.hfst
 $(PREFIX1).automorf-untrimmed.hfst: .deps/$(LANG1).automorf.hfst
 	hfst-fst2fst -w -i $< -o $@
 
-# est->fin mor
-# apertium-fin-est.est-fin.LR.att.gz
-# TODO: Make this use .und as well (but giella-est doesn't install any .und yet)
+# fkv->fin mor
+# apertium-fin-fkv.fkv-fin.LR.att.gz
+# TODO: Make this use .und as well (but giella-fkv doesn't install any .und yet)
 $(PREFIX2).automorf.hfst: $(AP_SRC2)/$(BASENAME).$(PREFIX2).LR.att.gz .deps/$(PREFIX2).autobil.prefixes .deps/punctuation.LR.hfst .deps/.d
 	$(ZCAT) $(AP_SRC2)/$(BASENAME).$(PREFIX2).LR.att.gz | hfst-txt2fst | hfst-union -2 .deps/punctuation.LR.hfst -o .deps/$(PREFIX2).automorf.untrimmed.hfst
 	hfst-compose-intersect -1 .deps/$(PREFIX2).automorf.untrimmed.hfst -2 .deps/$(PREFIX2).autobil.prefixes -o .deps/$(PREFIX2).automorf.hfst
 	hfst-fst2fst -O .deps/$(PREFIX2).automorf.hfst -o $@
 
-# fin->est gen
-# apertium-est.est.RL.att.gz
+# fin->fkv gen
+# apertium-fkv.fkv.RL.att.gz
 .deps/$(PREFIX1).autogen.hfst: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).RL.att.gz .deps/punctuation.RL.hfst .deps/.d
 	$(ZCAT) $< | hfst-txt2fst | hfst-union -2 .deps/punctuation.RL.hfst -o $@
 
 $(PREFIX1).autogen.hfst: .deps/$(PREFIX1).autogen.hfst
 	hfst-fst2fst -O $< -o $@
 
-# est->fin gen
+# fkv->fin gen
 # apertium-fin.fin.RL.att.gz
 .deps/$(PREFIX2).autogen.hfst: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).RL.att.gz .deps/punctuation.RL.hfst .deps/.d
 	$(ZCAT) $< | hfst-txt2fst | hfst-union -2 .deps/punctuation.RL.hfst -o $@
