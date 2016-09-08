@@ -14,6 +14,34 @@
     <def-cat n="inf">
       <cat-item tags="vblex.*.inf.*"/>
     </def-cat>
+    <def-cat n="verb-infma">                      <!-- <vblex><actv><infma><sg><ine> -->
+      <cat-item tags="vblex.actv.infma.*"/>
+    </def-cat>
+    <def-cat n="verb-infa">                      <!-- <vblex><actv><infa><sg><lat> -->
+      <cat-item tags="vblex.actv.infa.*"/>
+    </def-cat>
+    <def-cat n="verb-infe">                      <!-- <vblex><actv><infe>... -->
+      <cat-item tags="vblex.actv.infe.*"/>
+    </def-cat>
+    <def-cat n="verb-agprc">                      <!-- <vblex><actv><agprc> antama, antaman, ... antamat, ... -->
+      <cat-item tags="vblex.actv.agprc.*"/>
+      <cat-item tags="vblex.agprc.*"/>
+    </def-cat>
+    <def-cat n="verb-actv-prsprc">               <!-- <vblex><actv><prsprc><pl><nom> -->
+      <cat-item tags="vblex.actv.prsprc.*"/>       <!-- antava -->
+    </def-cat>
+    <def-cat n="verb-pasv-prsprc">               <!-- <vblex><pasv><prsprc><pl><nom>  -->
+      <cat-item tags="vblex.pss.prsprc.*"/>        <!-- annetava --> 
+      <cat-item tags="vblex.pasv.prsprc.*"/>        <!-- annetava --> 
+    </def-cat>
+    <def-cat n="verb-actv-prfprc">              <!-- <vblex><actv><prfprc><pl><nom> -->
+      <cat-item tags="vblex.actv.prfprc.*"/>        <!-- antanut, antaneet -->
+    </def-cat>
+    <def-cat n="verb-pasv-prfprc">              <!-- <vblex><pasv><prfprc><pl><nom> -->
+      <cat-item tags="vblex.pss.prfprc.*"/>        <!-- annettu -->
+      <cat-item tags="vblex.pasv.prfprc.*"/>        <!-- annettu -->
+    </def-cat>
+    
     <def-cat n="attr">
       <cat-item lemma="ieš" tags="prn.ref.*"/>
       <cat-item tags="prn.dem.*.@→N"/>
@@ -259,18 +287,12 @@
       <attr-item tags="p1.sg"/>
       <attr-item tags="p2.sg"/>
       <attr-item tags="p3.sg"/>
-      <attr-item tags="p1.du"/>
-      <attr-item tags="p2.du"/>
-      <attr-item tags="p3.du"/>
       <attr-item tags="p1.pl"/>
       <attr-item tags="p2.pl"/>
       <attr-item tags="p3.pl"/>
       <attr-item tags="px1sg"/>
       <attr-item tags="px2sg"/>
       <attr-item tags="px3sg"/>
-      <attr-item tags="px1du"/>
-      <attr-item tags="px2du"/>
-      <attr-item tags="px3du"/>
       <attr-item tags="px1pl"/>
       <attr-item tags="px2pl"/>
       <attr-item tags="px3pl"/>
@@ -281,9 +303,6 @@
       <attr-item tags="p1.sg"/>
       <attr-item tags="p2.sg"/>
       <attr-item tags="p3.sg"/>
-      <attr-item tags="p1.du"/>
-      <attr-item tags="p2.du"/>
-      <attr-item tags="p3.du"/>
       <attr-item tags="p1.pl"/>
       <attr-item tags="p2.pl"/>
       <attr-item tags="p3.pl"/>
@@ -293,9 +312,6 @@
       <attr-item tags="px1sg"/>
       <attr-item tags="px2sg"/>
       <attr-item tags="px3sg"/>
-      <attr-item tags="px1du"/>
-      <attr-item tags="px2du"/>
-      <attr-item tags="px3du"/>
       <attr-item tags="px1pl"/>
       <attr-item tags="px2pl"/>
       <attr-item tags="px3pl"/>
@@ -324,9 +340,7 @@
       <attr-item tags="ill"/>
       <attr-item tags="all"/>
       <attr-item tags="ade"/>
-      <attr-item tags="dat"/>
       <attr-item tags="gen"/>
-      <attr-item tags="loc"/>
       <attr-item tags="ins"/>
       <attr-item tags="abl"/>
     </def-attr>
@@ -784,15 +798,6 @@
           <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="gen"/></let>
         </when>
         <when>
-          <test><and><equal><clip pos="1" side="tl" part="a_cas"/><lit-tag v="loc"/></equal>
-                     <equal><clip pos="1" side="sl" part="x_func"/><lit-tag v="←hab→"/></equal></and></test>
-          <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ade"/></let>
-        </when>
-        <when>
-          <test><equal><clip pos="1" side="tl" part="a_cas"/><lit-tag v="loc"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ine"/></let>
-        </when>
-        <when>
           <test><and><equal><clip pos="1" side="tl" part="a_cas"/><lit-tag v="com"/></equal>
                      <or><equal><clip pos="1" side="tl" part="a_nom"/><lit-tag v="n"/></equal>
                          <equal><clip pos="1" side="tl" part="a_nom"/><lit-tag v="prn"/></equal>
@@ -956,7 +961,7 @@
       <choose>
         <when>
           <test><equal><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="vabess"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="infma.sg.abe"/></let>
+          <let><clip pos="1" side="tl" part="a_nonfin"/><lit-tag v="inf3.sg.abe"/></let>
           <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
           <let><clip pos="1" side="tl" part="a_adj"/><lit v=""/></let>
         </when>
