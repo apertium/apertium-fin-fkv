@@ -32,6 +32,12 @@
     
     <e><p><l>aika<s n="n"/></l><r>aika<s n="n"/></r></p></e>
     <e><p><l>ikkuna<s n="n"/></l><r>klasi<s n="n"/></r></p></e>
+    <e><p><l>lapsi<s n="n"/></l><r>lapsi<s n="n"/></r></p></e>
+    <e><p><l>vastaus<s n="n"/></l><r>vastaus<s n="n"/></r></p></e>
+    <e><p><l>pää<s n="n"/></l><r>pää<s n="n"/></r></p></e>
+    <e><p><l>sisko<s n="n"/></l><r>sisar<s n="n"/></r></p></e>
+    <e><p><l>lintu<s n="n"/></l><r>lintu<s n="n"/></r></p></e>
+    <e><p><l>tuoli<s n="n"/></l><r>tooli<s n="n"/></r></p></e>
 
     <e><p><l>talo<s n="n"/></l><r>talo<s n="n"/></r></p></e>
     <e><p><l>kissa<s n="n"/></l><r>kissa<s n="n"/></r></p></e>
@@ -105,6 +111,13 @@
 <!-- Verbs -->
 
 <e><p><l>alkaa<s n="vblex"/></l><r>alkkaat<s n="vblex"/></r></p></e>
+<e><p><l>juoda<s n="vblex"/></l><r>juođa<s n="vblex"/></r></p></e>
+<e><p><l>puhua<s n="vblex"/></l><r>puhhuut<s n="vblex"/></r></p></e>
+<e><p><l>tehdä<s n="vblex"/></l><r>tehđä<s n="vblex"/></r></p></e>
+<e><p><l>kuulla<s n="vblex"/></l><r>kuula<s n="vblex"/></r></p></e>
+<e><p><l>ajatella<s n="vblex"/></l><r>ajatella<s n="vblex"/></r></p></e>
+<e><p><l>löytää<s n="vblex"/></l><r>löyttäät<s n="vblex"/></r></p></e>
+
 <e><p><l>antaa<s n="vblex"/></l><r>anttaat<s n="vblex"/></r></p></e>
 <e><p><l>asettua<s n="vblex"/></l><r>asettua<s n="vblex"/></r></p></e>
 <e><p><l>ei<s n="vblex"/></l><r>ei<s n="vblex"/></r></p></e>
@@ -155,6 +168,8 @@
 <e><p><l>pitää<s n="vblex"/></l><r>pittäät<s n="vblex"/></r></p></e>
 <e><p><l>pitää<s n="vblex"/></l><r>tykätä<s n="vblex"/></r></p></e>
 <e><p><l>tykätä<s n="vblex"/></l><r>tykätä<s n="vblex"/></r></p></e>
+<e><p><l>nukkua<s n="vblex"/></l><r>nukkuut<s n="vblex"/></r></p></e>
+
 
 <!-- Auxiliaries -->
 
@@ -165,6 +180,8 @@
 <!-- Adjectives -->
 
 <e><p><l>fiini<s n="adj"/></l><r>fiini<s n="adj"/></r></p></e>
+<e><p><l>hauska<s n="adj"/></l><r>hauska<s n="adj"/></r></p></e>
+
 <e><p><l>hyvä<s n="adj"/></l><r>hyvä<s n="adj"/></r></p></e>
 <e><p><l>lämmin<s n="adj"/></l><r>lämmin<s n="adj"/></r></p></e>
 <e><p><l>kylmä<s n="adj"/></l><r>kylmä<s n="adj"/></r></p></e>
@@ -195,29 +212,36 @@
 <e><p><l>viimeinen<s n="adj"/></l><r>viiminen<s n="adj"/></r></p></e>
 <e><p><l>vähän<s n="adj"/></l><r>vähän<s n="adj"/></r></p></e>
 
+
 <!-- Adverbs -->
 
-<e><p><l>ennen<s n="adv"/></l><r>ennen<s n="adv"/></r></p></e>
-<e><p><l>erittäin<s n="adv"/></l><r>kovin<s n="adv"/></r></p></e>
-<e><p><l>missä<s n="adv"/></l><r>missä<s n="adv"/></r></p></e>
-
-
+<e><p><l>eilen<s n="adv"/></l><r>eilen<s n="adv"/></r></p></e>
 <e><p><l>enemmän<s n="adv"/></l><r>enämen<s n="adv"/></r></p></e>
 <e><p><l>enempää<s n="adv"/></l><r>enämppää<s n="adv"/></r></p></e>
-<e><p><l>myöhemmin<s n="adv"/></l><r>hiljemin<s n="adv"/></r></p></e>
+<e><p><l>ennen<s n="adv"/></l><r>ennen<s n="adv"/></r></p></e>
+<e><p><l>erittäin<s n="adv"/></l><r>kovin<s n="adv"/></r></p></e>
+<e><p><l>hitaasti<s n="adv"/></l><r>hithaasti<s n="adv"/></r></p></e>
+<e><p><l>hyvin<s n="adv"/></l><r>hyvin<s n="adv"/></r></p></e>
 <e><p><l>jo<s n="adv"/></l><r>jo<s n="adv"/></r></p></e>
 <e><p><l>koskaan<s n="adv"/></l><r>koskhaan<s n="adv"/></r></p></e>
+<e><p><l>miksi<s n="adv"/></l><r>miksi<s n="adv"/></r></p></e>
+<e><p><l>minne<s n="adv"/></l><r>minne<s n="adv"/></r></p></e>
+<e><p><l>missä<s n="adv"/></l><r>missä<s n="adv"/></r></p></e>
+<e><p><l>myöhemmin<s n="adv"/></l><r>hiljemin<s n="adv"/></r></p></e>
 <e><p><l>niinpä<s n="adv"/></l><r>niinpä<s n="adv"/></r></p></e>
 <e><p><l>nyt<s n="adv"/></l><r>nyt<s n="adv"/></r></p></e>
 <e><p><l>pian<s n="adv"/></l><r>piian<s n="adv"/></r></p></e>
-<e><p><l>vähän<s n="adv"/></l><r>pikkuisen<s n="adv"/></r></p></e>
 <e><p><l>siellä<s n="adv"/></l><r>sielä<s n="adv"/></r></p></e>
 <e><p><l>silloin<s n="adv"/></l><r>silloin<s n="adv"/></r></p></e>
 <e><p><l>siltikään<s n="adv"/></l><r>siltikhään<s n="adv"/></r></p></e>
 <e><p><l>sinne<s n="adv"/></l><r>sinne<s n="adv"/></r></p></e>
+<e><p><l>sitten<s n="adv"/></l><r>sitten<s n="adv"/></r></p></e>
 <e><p><l>suoraan<s n="adv"/></l><r>suorhaan<s n="adv"/></r></p></e>
 <e><p><l>suunnilleen<s n="adv"/></l><r>suunile<s n="adv"/></r></p></e>
+<e><p><l>tänään<s n="adv"/></l><r>tääpänä<s n="adv"/></r></p></e>
 <e><p><l>vain<s n="adv"/></l><r>tyhä<s n="adv"/></r></p></e>
+<e><p><l>vähän<s n="adv"/></l><r>pikkuisen<s n="adv"/></r></p></e>
+<e><p><l>yhä<s n="adv"/></l><r>yhä<s n="adv"/></r></p></e>
 <e><p><l>ylös<s n="adv"/></l><r>ylös<s n="adv"/></r></p></e>
 
 
@@ -234,15 +258,21 @@
 <e><p><l>tämä<s n="prn"/></l><r>tämä<s n="prn"/></r></p></e>
 <e><p><l>miksi<s n="prn"/></l><r>miksi<s n="prn"/></r></p></e>
 <e><p><l>mitään<s n="prn"/></l><r>mithään<s n="prn"/></r></p></e>
+<e><p><l>molemmat<s n="prn"/></l><r>molemat<s n="prn"/></r></p></e>
 
 
 <!-- Postpositions -->
 
 <e><p><l>alla<s n="post"/></l><r>alla<s n="post"/></r></p></e>
+<e><p><l>alle<s n="post"/></l><r>alle<s n="post"/></r></p></e>
+<e><p><l>alta<s n="post"/></l><r>alta<s n="post"/></r></p></e>
+
 <e><p><l>edestä<s n="post"/></l><r>eđestä<s n="post"/></r></p></e>
 <e><p><l>jälkeen<s n="post"/></l><r>jälkhiin<s n="post"/></r></p></e>
 <e><p><l>keskellä<s n="post"/></l><r>keskelä<s n="post"/></r></p></e>
 <e><p><l>kohti<s n="post"/></l><r>kohti<s n="post"/></r></p></e>
+<e><p><l>luokse<s n="post"/></l><r>tykö<s n="post"/></r></p></e>
+<e><p><l>luona<s n="post"/></l><r>tykönä<s n="post"/></r></p></e>
 <e><p><l>lähellä<s n="post"/></l><r>likelä<s n="post"/></r></p></e>
 <e><p><l>läpi<s n="post"/></l><r>läpi<s n="post"/></r></p></e>
 <e><p><l>myöten<s n="post"/></l><r>myöten<s n="post"/></r></p></e>
@@ -251,8 +281,6 @@
 <e><p><l>takaa<s n="post"/></l><r>taka<s n="post"/></r></p></e>
 <e><p><l>takaa<s n="post"/></l><r>takkaa<s n="post"/></r></p></e>
 <e><p><l>takana<s n="post"/></l><r>takana<s n="post"/></r></p></e>
-<e><p><l>luokse<s n="post"/></l><r>tykö<s n="post"/></r></p></e>
-<e><p><l>luona<s n="post"/></l><r>tykönä<s n="post"/></r></p></e>
 <e><p><l>tähden<s n="post"/></l><r>tähđen<s n="post"/></r></p></e>
 <e><p><l>yli<s n="post"/></l><r>yli<s n="post"/></r></p></e>
 
@@ -274,6 +302,7 @@
 <e><p><l>niin<s n="cnjcoo"/></l><r>niin<s n="cnjcoo"/></r></p></e>
 <e><p><l>tai<s n="cnjcoo"/></l><r>tahi<s n="cnjcoo"/></r></p></e>
 <e><p><l>vaan<s n="cnjcoo"/></l><r>vaan<s n="cnjcoo"/></r></p></e>
+<e><p><l>mutta<s n="cnjcoo"/></l><r>mutta<s n="cnjcoo"/></r></p></e>
 
 <!-- Subjunctions -->
 
