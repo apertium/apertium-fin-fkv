@@ -512,9 +512,11 @@
       <attr-item tags="sem_furn"/>
       <attr-item tags="sem_game_obj-play"/>
       <attr-item tags="sem_geom"/>
+      <attr-item tags="sem_geo"/>
       <attr-item tags="sem_group"/>
       <attr-item tags="sem_group_hum"/>
       <attr-item tags="sem_group_hum_plc"/>
+      <attr-item tags="sem_human"/>
       <attr-item tags="sem_hum"/>
       <attr-item tags="sem_hum_plc"/>
       <attr-item tags="sem_hum.coll"/>
