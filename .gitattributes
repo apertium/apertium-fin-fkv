@@ -26,3 +26,8 @@ dev/transfer.txt -text
 /modes.xml -text
 texts/sailor.fin.txt -text
 texts/sailor.fkv.txt -text
+*.dix linguist-language=XML linguist-detectable=true
+*.lrx linguist-language=XML linguist-detectable=true
+*.lsx linguist-language=XML linguist-detectable=true
+*.tsx linguist-language=XML linguist-detectable=true
+*.t[[:digit:]]x linguist-language=XML linguist-detectable=true
