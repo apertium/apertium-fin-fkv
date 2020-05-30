@@ -2,7 +2,6 @@
 ## Makefile for fin-fkv
 ###############################################################################
 
-VERSION=0.1.0
 LANG1=fin
 LANG2=fkv
 PREFIX1=$(LANG1)-$(LANG2)
@@ -19,7 +18,6 @@ TARGETS_COMMON = \
 	$(PREFIX1).automorf.hfst \
 	$(PREFIX1).automorf-untrimmed.hfst \
 	$(PREFIX1).rlx.bin \
-	$(PREFIX1).t1x.bin  \
 	$(PREFIX1).t1x.bin \
 	$(PREFIX1).t2x.bin \
 	$(PREFIX1).t3x.bin \
@@ -28,7 +26,6 @@ TARGETS_COMMON = \
 	$(PREFIX2).autolex.bin \
 	$(PREFIX2).automorf.hfst \
 	$(PREFIX2).rlx.bin \
-	$(PREFIX2).t1x.bin \
 	$(PREFIX2).t1x.bin \
 	$(PREFIX2).t2x.bin \
 	$(PREFIX2).t3x.bin
