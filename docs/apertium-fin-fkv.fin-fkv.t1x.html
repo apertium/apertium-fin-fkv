@@ -1,0 +1,3911 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>
+         apertium-fin-fkv :
+         Apertium-fin-fkv bilingual rules and resources
+         
+      </title>
+      <meta name="generator" content="apevis-xslt">
+      <meta property="og:title" content="&#xA;            apertium-fin-fkv">
+      <meta property="og:locale" content="en">
+      <meta name="description" content="Finnish–&#xA;            dictionary for rule-based machine translation&#xA;          ">
+      <link rel="canonical" href="%0A            https://apertium.github.io/apertium-fin-fkv/%0A          ">
+      <meta property="og:url" content="&#xA;            https://apertium.github.io/apertium-fin-fkv/&#xA;          ">
+      <meta property="og:site_name" content="&#xA;            apertium-fin-fkv"><script type="application/ld+json">
+          {"headline":"Apertium-fin-fkv",
+          "@type":"WebSite",
+          "url":"http://apertium.github.io/apertium-fin-fkv/",
+          "name":"apertium-fin-fkv",
+          "description":"Apertium bilingual data for Finnish– machine translation",
+          "@context":"http://schema.org"}
+        </script><link rel="stylesheet" href="/apertium-fin-fkv/assets/css/style.css?v=0553eb4429e442aa5eeaa159606840983213fbbe"><script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><script src="/apertium-fin-deu/assets/js/respond.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+   </head>
+   <body>
+      <div id="header">
+         <nav>
+            <li class="fork"><a href="https://github.com/apertium/apertium-fin-fkv">
+                  View On GitHub
+                  </a></li>
+         </nav>
+      </div>
+      <div class="wrapper">
+         <section>
+            <div id="title">
+               <h1>apertium-fin-fkv</h1>
+               <p>Finnish–
+                  dictionary for rule-based machine translation
+                  
+               </p>
+               <hr><span class="credits left">
+                  Project maintained by 
+                  <a href="https://github.com/apertium">apertium</a></span><span class="credits right">
+                  Hosted on GitHub Pages – Theme by
+                  <a href="https://twitter.com/michigangraham">mattgraham</a></span></div>
+            <h1 id="rules">
+               Apertium-fin-fkv:
+               Finnish–
+               machine translation rules
+               
+            </h1>
+            <p style="font-variant: italic">
+               This is a visualisation of some rules in apertium transfer.
+               
+            </p>
+            
+            <h2>Categories (parts of chunks)</h2>
+            <p>
+               These are the categories Apertium is using in order to chunk, re-order
+               and transfer lexemes.
+               
+            </p>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Category</th>
+                     <th>Items</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  
+                  <tr>
+                     <td>default</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>qst</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;pcle.qst.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>cnp</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;cnjcoo.@CNP&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>inf</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.inf.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-infma</td>
+                     <td>
+                        <ul>                      
+                           
+                           <li><code>&lt;vblex.actv.infma.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-infa</td>
+                     <td>
+                        <ul>                      
+                           
+                           <li><code>&lt;vblex.actv.infa.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-infe</td>
+                     <td>
+                        <ul>                      
+                           
+                           <li><code>&lt;vblex.actv.infe.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-agprc</td>
+                     <td>
+                        <ul>                      
+                           
+                           <li><code>&lt;vblex.actv.agprc.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.agprc.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-actv-prsprc</td>
+                     <td>
+                        <ul>               
+                           
+                           <li><code>&lt;vblex.actv.prsprc.*&gt;</code></li>       
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-pasv-prsprc</td>
+                     <td>
+                        <ul>               
+                           
+                           <li><code>&lt;vblex.pss.prsprc.*&gt;</code></li>         
+                           
+                           <li><code>&lt;vblex.pasv.prsprc.*&gt;</code></li>         
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-actv-prfprc</td>
+                     <td>
+                        <ul>              
+                           
+                           <li><code>&lt;vblex.actv.prfprc.*&gt;</code></li>        
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb-pasv-prfprc</td>
+                     <td>
+                        <ul>              
+                           
+                           <li><code>&lt;vblex.pss.prfprc.*&gt;</code></li>        
+                           
+                           <li><code>&lt;vblex.pasv.prfprc.*&gt;</code></li>        
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>attr</td>
+                     <td>
+                        <ul>
+                           
+                           <li>ieš<code>&lt;prn.ref.*&gt;</code></li>
+                           
+                           <li><code>&lt;prn.dem.*.@→N&gt;</code></li>
+                           
+                           <li><code>&lt;prn.ind.*.@→N&gt;</code></li>
+                           
+                           <li><code>&lt;num.*.*.@→N&gt;</code></li>
+                           
+                           <li><code>&lt;prn.*.attr.*&gt;</code></li>
+                           
+                           <li><code>&lt;num.*.*.attr.*&gt;</code></li>
+                           
+                           <li><code>&lt;adj.*.attr.*&gt;</code></li>
+                           
+                           <li><code>&lt;adj.*.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;adj.*.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;adj.attr.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>pron</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;prn.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>prsprc</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.prsprc.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>pass-prc</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.der_passs.vblex.iv.prfprc.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*.der_passl.vblex.iv.prfprc.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*.der_passs.vblex.iv.prsprc.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*.der_passl.vblex.iv.prsprc.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>prfprc</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.prfprc.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>conneg-pret</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.indic.pret.conneg.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>pot</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.pot.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>cond</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.cond.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>fin</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.indic.pres.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*.indic.pret.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>pass-fin</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*.der_passs.vblex.iv.indic.pres.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*.der_passs.vblex.iv.indic.pret.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*.der_passl.vblex.iv.indic.pres.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*.der_passl.vblex.iv.indic.pret.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>word</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;n.*&gt;</code></li>
+                           
+                           <li><code>&lt;adj.*&gt;</code></li>
+                           
+                           <li><code>&lt;vblex.*&gt;</code></li>
+                           
+                           <li><code>&lt;prn.*&gt;</code></li>
+                           
+                           <li><code>&lt;adv.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>adv</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;adv.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>adj</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;adj.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>num-nomacc</td>
+                     <td>
+                        <ul>                           
+                           
+                           <li><code>&lt;num.sg.nom.*&gt;</code></li>                  
+                           
+                           <li><code>&lt;num.sg.acc.*&gt;</code></li>                  
+                           
+                        </ul>
+                     </td>
+                  </tr>                                         
+                  
+                  <tr>
+                     <td>num-nom</td>
+                     <td>
+                        <ul>                           
+                           
+                           <li><code>&lt;num.sg.nom.*&gt;</code></li>                  
+                           
+                        </ul>
+                     </td>
+                  </tr>                                         
+                  
+                  <tr>
+                     <td>num-acc</td>
+                     <td>
+                        <ul>                           
+                           
+                           <li><code>&lt;num.sg.acc.*&gt;</code></li>                  
+                           
+                        </ul>
+                     </td>
+                  </tr>                                         
+                  
+                  <tr>
+                     <td>n-sg-accgen</td>
+                     <td>
+                        <ul>                             
+                           
+                           <li><code>&lt;n.*.sg.gen.*&gt;</code></li>                     
+                           
+                           <li><code>&lt;n.*.*.sg.gen.*&gt;</code></li>                   
+                           
+                           <li><code>&lt;n.*.sg.acc.*&gt;</code></li>                     
+                           
+                           <li><code>&lt;n.*.*.sg.acc.*&gt;</code></li>                   
+                           
+                        </ul>
+                     </td>
+                  </tr>  
+                  
+                  <tr>
+                     <td>nom-cmp</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;n.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sgnom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sgnom.cmp_splitr&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sgnom.cmp_splitr.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sgnom.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sggen.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sggen.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sgnom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sgnom.cmp_splitr.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sgnom.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sggen.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sggen.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sgnom.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sgnom.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sggen.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_sggen.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sgnom.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sgnom.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sggen.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_sggen.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plnom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plnom.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plgen.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plgen.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plnom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plnom.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plgen.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plgen.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plnom.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plnom.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plgen.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp_plgen.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plnom.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plnom.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plgen.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.*.cmp_plgen.cmp_hyph.cmp.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  
+                  <tr>
+                     <td>nom</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;n.*&gt;</code></li>
+                           
+                           <li><code>&lt;np.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>sent</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sent&gt;</code></li>
+                           
+                           <li><code>&lt;sent.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+               </tbody>
+            </table>
+            
+            
+            
+            
+            
+            
+            <h2>Attributes</h2>
+            <p>
+               These are the morphological analysis value (tag) sets that can be
+               processed in the transfer.
+               
+            </p>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Attribute set name</th>
+                     <th>Tags</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  
+                  <tr>
+                     <td>a_ntype</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;nomag&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_known</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;known&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_conneg</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;conneg&gt;</code></li>
+                           
+                           <li><code>&lt;connegii&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_voice</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;actv&nbsp;&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_qst</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;qst&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_mood_temps</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;cond&gt;</code></li>
+                           
+                           <li><code>&lt;cond.pres&gt;</code></li>
+                           
+                           <li><code>&lt;cond.pret&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_tense</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;pres&gt;</code></li>
+                           
+                           <li><code>&lt;pret&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_mood</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;indic&gt;</code></li>
+                           
+                           <li><code>&lt;cond&gt;</code></li>
+                           
+                           <li><code>&lt;pot&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_prc</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;prfprc&gt;</code></li>
+                           
+                           <li><code>&lt;prsprc&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_nonfin</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;inf&gt;</code></li>
+                           
+                           <li><code>&lt;agprc.sg.nom&gt;</code></li>
+                           
+                           <li><code>&lt;infma.sg.ine&gt;</code></li>
+                           
+                           <li><code>&lt;infe.sg.ine&gt;</code></li>
+                           
+                           <li><code>&lt;infma.sg.ins&gt;</code></li>
+                           
+                           <li><code>&lt;infa.sg.tra&gt;</code></li>
+                           
+                           <li><code>&lt;infma.sg.abe&gt;</code></li>
+                           
+                           <li><code>&lt;der_minen.sg.ela&gt;</code></li>
+                           
+                           <li><code>&lt;der_minen.sg.gen&gt;</code></li>
+                           
+                           <li><code>&lt;der_minen.sg.tra&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_pass</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;der_passs.vblex.iv&gt;</code></li>
+                           
+                           <li><code>&lt;der_passl.vblex.iv&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_deriv</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;der_dimin&gt;</code></li>
+                           
+                           <li><code>&lt;der_dimin.n&gt;</code></li>
+                           
+                           <li><code>&lt;der_dimin.adj&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_adj</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;adj&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_dem</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;dem&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_prn</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;pers&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_pos</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;n&gt;</code></li>
+                           
+                           <li><code>&lt;adj&gt;</code></li>
+                           
+                           <li><code>&lt;adv&gt;</code></li>
+                           
+                           <li><code>&lt;num&gt;</code></li>
+                           
+                           <li><code>&lt;np&gt;</code></li>
+                           
+                           <li><code>&lt;prn&gt;</code></li>
+                           
+                           <li><code>&lt;prn.pers&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_nom</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;n&gt;</code></li>
+                           
+                           <li><code>&lt;np&gt;</code></li>
+                           
+                           <li><code>&lt;prn&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_nbr</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;ND&gt;</code></li>
+                           
+                           <li><code>&lt;sg&gt;</code></li>
+                           
+                           <li><code>&lt;pl&gt;</code></li>
+                           
+                           <li><code>&lt;du&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_cmp</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;cmp&gt;</code></li>
+                           
+                           <li><code>&lt;n.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp.guio&gt;</code></li>
+                           
+                           
+                           <li><code>&lt;cmp_sgnom.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_sggen.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_sgnom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_sggen.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_sgnom.cmp_splitr&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_sggen.cmp_splitr&gt;</code></li>
+                           
+                           
+                           <li><code>&lt;sg.nom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;sg.gen.cmp&gt;</code></li>
+                           
+                           
+                           <li><code>&lt;cmp_plnom.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_plgen.cmp_hyph.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_plnom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;cmp_plgen.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;pl.nom.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;pl.gen.cmp&gt;</code></li>
+                           
+                           <li><code>&lt;pl.nom.cmp_splitr&gt;</code></li>
+                           
+                           <li><code>&lt;pl.gen.cmp_splitr&gt;</code></li>
+                           
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>a_px_pers</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;p1.sg&gt;</code></li>
+                           
+                           <li><code>&lt;p2.sg&gt;</code></li>
+                           
+                           <li><code>&lt;p3.sg&gt;</code></li>
+                           
+                           <li><code>&lt;p1.pl&gt;</code></li>
+                           
+                           <li><code>&lt;p2.pl&gt;</code></li>
+                           
+                           <li><code>&lt;p3.pl&gt;</code></li>
+                           
+                           <li><code>&lt;px1sg&gt;</code></li>
+                           
+                           <li><code>&lt;px2sg&gt;</code></li>
+                           
+                           <li><code>&lt;px3sg&gt;</code></li>
+                           
+                           <li><code>&lt;px1pl&gt;</code></li>
+                           
+                           <li><code>&lt;px2pl&gt;</code></li>
+                           
+                           <li><code>&lt;px3pl&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  
+                  <tr>
+                     <td>a_pers</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;p1.sg&gt;</code></li>
+                           
+                           <li><code>&lt;p2.sg&gt;</code></li>
+                           
+                           <li><code>&lt;p3.sg&gt;</code></li>
+                           
+                           <li><code>&lt;p1.pl&gt;</code></li>
+                           
+                           <li><code>&lt;p2.pl&gt;</code></li>
+                           
+                           <li><code>&lt;p3.pl&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>a_px</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;px1sg&gt;</code></li>
+                           
+                           <li><code>&lt;px2sg&gt;</code></li>
+                           
+                           <li><code>&lt;px3sg&gt;</code></li>
+                           
+                           <li><code>&lt;px1pl&gt;</code></li>
+                           
+                           <li><code>&lt;px2pl&gt;</code></li>
+                           
+                           <li><code>&lt;px3pl&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>sg_acc</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sg.acc&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>sg_num_cas</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sg.nom&gt;</code></li>
+                           
+                           <li><code>&lt;sg.acc&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  
+                  
+                  <tr>
+                     <td>a_cas</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;CD&gt;</code></li>
+                           
+                           <li><code>&lt;nom&gt;</code></li>
+                           
+                           <li><code>&lt;acc&gt;</code></li>
+                           
+                           <li><code>&lt;par&gt;</code></li>
+                           
+                           <li><code>&lt;com&gt;</code></li>
+                           
+                           <li><code>&lt;ess&gt;</code></li>
+                           
+                           <li><code>&lt;ela&gt;</code></li>
+                           
+                           <li><code>&lt;ine&gt;</code></li>
+                           
+                           <li><code>&lt;ill&gt;</code></li>
+                           
+                           <li><code>&lt;all&gt;</code></li>
+                           
+                           <li><code>&lt;ade&gt;</code></li>
+                           
+                           <li><code>&lt;gen&gt;</code></li>
+                           
+                           <li><code>&lt;ins&gt;</code></li>
+                           
+                           <li><code>&lt;abl&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>x_func</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;←ext→&gt;</code></li>
+                           
+                           <li><code>&lt;←hab→&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>a_func_obj</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;@←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOBJ→&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>a_func</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;@→A&gt;</code></li>
+                           
+                           <li><code>&lt;@A←&gt;</code></li>
+                           
+                           <li><code>&lt;@←ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@→ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL←&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL→&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL→CS&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL→SUBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@APP&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-ADVL←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-N←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-Num←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-Pron←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP→Pron&gt;</code></li>
+                           
+                           <li><code>&lt;@→CC&gt;</code></li>
+                           
+                           <li><code>&lt;@CNP&gt;</code></li>
+                           
+                           <li><code>&lt;@COMP-CS←&gt;</code></li>
+                           
+                           <li><code>&lt;@CVP&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@-FADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@-FADVL→&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←ADVL-ine&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←ADVL-ela&gt;</code></li>
+                           
+                           <li><code>&lt;@-FAUXV&gt;</code></li>
+                           
+                           <li><code>&lt;@\+FAUXV&gt;</code></li>
+                           
+                           <li><code>&lt;@+FAUXV&gt;</code></li>
+                           
+                           <li><code>&lt;@-FMAINV&gt;</code></li>
+                           
+                           <li><code>&lt;@\+FMAINV&gt;</code></li>
+                           
+                           <li><code>&lt;@+FMAINV&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←OPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@-FSPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@-FSUBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@HAB&gt;</code></li>
+                           
+                           <li><code>&lt;←hab→&gt;</code></li>
+                           
+                           <li><code>&lt;@HNOUN&gt;</code></li>
+                           
+                           <li><code>&lt;@INTERJ&gt;</code></li>
+                           
+                           <li><code>&lt;@→N&gt;</code></li>
+                           
+                           <li><code>&lt;@N&gt;</code></li>
+                           
+                           <li><code>&lt;@N←&gt;</code></li>
+                           
+                           <li><code>&lt;@→Num&gt;</code></li>
+                           
+                           <li><code>&lt;@Num←&gt;</code></li>
+                           
+                           <li><code>&lt;@←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ→SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@-OPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@←OPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@OPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@OPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@→P&gt;</code></li>
+                           
+                           <li><code>&lt;@P←&gt;</code></li>
+                           
+                           <li><code>&lt;@PCLE&gt;</code></li>
+                           
+                           <li><code>&lt;@←PPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@PPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@→Pron&gt;</code></li>
+                           
+                           <li><code>&lt;@Pron←&gt;</code></li>
+                           
+                           <li><code>&lt;@-SPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@←SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@SPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@SPRED←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@←SUBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ←ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@VOC&gt;</code></li>
+                           
+                           <li><code>&lt;@X&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  
+                  <tr>
+                     <td>a_sem</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sem_act&gt;</code></li>
+                           
+                           <li><code>&lt;sem_act_route&gt;</code></li>
+                           
+                           <li><code>&lt;sem_act_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_amount&gt;</code></li>
+                           
+                           <li><code>&lt;sem_amount_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_body-abstr_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_build_hum_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_build-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_group&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_group_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_obj-clo&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_perc-phys&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body-abstr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body-abstr_prod-audio_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_clth&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_food&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_group_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_mat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build_edu_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_cat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-jewl&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-jewl_curr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-jewl_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain-abstr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain-clth&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain-clth_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain_furn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_curr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_dance&gt;</code></li>
+                           
+                           <li><code>&lt;sem_domain&gt;</code></li>
+                           
+                           <li><code>&lt;sem_drink&gt;</code></li>
+                           
+                           <li><code>&lt;sem_dummytag&gt;</code></li>
+                           
+                           <li><code>&lt;sem_edu&gt;</code></li>
+                           
+                           <li><code>&lt;sem_edu_event&gt;</code></li>
+                           
+                           <li><code>&lt;sem_edu_mat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_edu_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event_food&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-measr_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys_tool-write&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-psych&gt;</code></li>
+                           
+                           <li><code>&lt;sem_food&gt;</code></li>
+                           
+                           <li><code>&lt;sem_food-med&gt;</code></li>
+                           
+                           <li><code>&lt;sem_food_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_furn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_game_obj-play&gt;</code></li>
+                           
+                           <li><code>&lt;sem_geom&gt;</code></li>
+                           
+                           <li><code>&lt;sem_geo&gt;</code></li>
+                           
+                           <li><code>&lt;sem_group&gt;</code></li>
+                           
+                           <li><code>&lt;sem_group_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_group_hum_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_human&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum.coll&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_lang&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_lang_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_obj&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ideol&gt;</code></li>
+                           
+                           <li><code>&lt;sem_lang&gt;</code></li>
+                           
+                           <li><code>&lt;sem_lang_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_mat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_mat_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_mat_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_measr_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_money&gt;</code></li>
+                           
+                           <li><code>&lt;sem_money_obj&gt;</code></li>
+                           
+                           <li><code>&lt;sem_money_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-clo&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-el&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-ling&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-play&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-rope&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj_state&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-surfc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_org_rule&gt;</code></li>
+                           
+                           <li><code>&lt;sem_org_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_part_prod-cogn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_perc-emo&gt;</code></li>
+                           
+                           <li><code>&lt;sem_perc-phys&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plant-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plant_plant-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-abstr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-abstr_rel_state&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-abstr_route&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-elevate&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-line&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_pos&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_route&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_substnc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_substnc_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_tool-catch&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-water&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_pos&gt;</code></li>
+                           
+                           <li><code>&lt;sem_process&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-audio&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-audio_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-cogn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-cogn_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-ling&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-vis&gt;</code></li>
+                           
+                           <li><code>&lt;sem_rel&gt;</code></li>
+                           
+                           <li><code>&lt;sem_route&gt;</code></li>
+                           
+                           <li><code>&lt;sem_rule&gt;</code></li>
+                           
+                           <li><code>&lt;sem_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_semcon_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_sign&gt;</code></li>
+                           
+                           <li><code>&lt;sem_state&gt;</code></li>
+                           
+                           <li><code>&lt;sem_state-sick&gt;</code></li>
+                           
+                           <li><code>&lt;sem_substnc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_substnc_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_sur&gt;</code></li>
+                           
+                           <li><code>&lt;sem_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_time_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-catch&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-clean&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-it&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-music&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-write&gt;</code></li>
+                           
+                           <li><code>&lt;sem_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_wpn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_year&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  
+                  
+               </tbody>
+            </table>
+            
+            
+            
+            
+            
+            <h2>Macros</h2>
+            <p>Macros are helper functions in apertium transfer files.</p>
+            
+            <h3>remove-semtags1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     let <em>tl[1]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>remove-semtags2</h3>
+            <div>Parametres: 2</div><code>
+               <ol>
+                  
+                  <li>
+                     let <em>tl[1]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[2]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>remove-semtags3</h3>
+            <div>Parametres: 3</div><code>
+               <ol>
+                  
+                  <li>
+                     let <em>tl[1]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[2]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[3]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>concord-nominal2</h3>
+            <div>Parametres: 2</div><code>
+               <ol>
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[2]['lem']</em> ≟ 
+                                    "koko"
+                                    
+                                 </li>
+                                 
+                                 <li><em>tl[2]['a_nbr']</em> ≟ 
+                                    ""
+                                    
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[2]['tags']</em> ≔ <em>tl[2]['tags']</em>&lt;ND&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[2]['lem']</em> ≟ 
+                                    "koko"
+                                    
+                                 </li>
+                                 
+                                 <li><em>tl[2]['a_cas']</em> ≟ 
+                                    ""
+                                    
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[2]['tags']</em> ≔ <em>tl[2]['tags']</em>&lt;CD&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[2]['a_cas']</em> ≟ &lt;gen&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[2]['a_dem']</em> ≟ 
+                                    ""
+                                    
+                                 </li>
+                                 
+                                 <li><em>tl[2]['a_attr']</em> ≟ 
+                                    ""
+                                    
+                                 </li> 
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[2]['a_cas']</em> ≔ <em>tl[1]['a_cas']</em></li>
+                              <li>
+                                 let <em>tl[2]['a_nbr']</em> ≔ <em>tl[1]['a_nbr']</em></li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>concord-nominal3</h3>
+            <div>Parametres: 3</div><code>
+               <ol>
+                  
+                  <li>concord-nominal2($1$2)</li>
+                  
+                  <li>concord-nominal2($1$3)</li>
+                  
+               </ol></code>
+            
+            
+            <h3>handle-nominal-derivation2</h3>
+            <div>Parametres: 2</div><code>
+               <ol> 
+                  
+                  <li>handle-nominal-derivation1($1)</li>
+                  
+                  <li>handle-nominal-derivation1($2)</li>
+                  
+               </ol></code>
+            
+            
+            <h3>neg-verb-nonfin1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     <ol> 
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_nonfin']</em> ≟ &lt;supn&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ &lt;vblex.neg.actv.p3.sg&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>convert-passive1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     <ol> 
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_tense']</em> ≟ &lt;pres&gt;
+                                 </li>
+                                 
+                                 <li><em>sl[1]['a_tense']</em> ≟ &lt;pret&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ &lt;vblex.pasv.indic&gt;
+                                 <em>tl[1]['a_tense']</em>&lt;pe4&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_prc']</em> ≟ &lt;prfprc&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ &lt;vblex.pasv.prfprc.sg.nom&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>pers-to-px1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p1.sg&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px1sg&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p2.sg&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px2sg&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p3.sg&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px3sg&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p1.du&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px1du&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p2.du&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px2du&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p3.du&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px3du&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p1.pl&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px1pl&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p2.pl&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px2pl&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_pers']</em> ≟ &lt;p3.pl&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px_pers']</em> ≔ &lt;px3pl&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>handle-nominal-derivation1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_deriv']</em> ≟ &lt;der_dimin.n&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_deriv']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_deriv']</em> ≟ &lt;der_dimin.adj&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_deriv']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>sl[1]['a_deriv']</em> ≟ &lt;der_dimin&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_deriv']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>default-conversion1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     let <em>tl[1]['a_known']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_attr']</em> ≟ 
+                                    ""
+                                    
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_attr']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['lem']</em> ≟ 
+                                    "koko"
+                                    
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ &lt;prn.qnt&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;acc&gt;
+                                 </li>
+                                 
+                                 <li><em>sl[1]['a_func_obj']</em> ≟ 
+                                    ""
+                                    
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;prn.pers&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;par&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;acc&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;prn.pers&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;gen&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;com&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_nom']</em> ≟ &lt;n&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_nom']</em> ≟ &lt;prn&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_nom']</em> ≟ &lt;np&gt;
+                                 </li>
+                                 
+                                 
+                                 <li><em>sl[1]['a_func']</em> ≟ &lt;@→N&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;gen&gt;
+                                 "$ ^kanssa"
+                                 &lt;post&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;com&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_func']</em> ≟ &lt;@→N&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;prn.pers&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;gen&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;com&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_nom']</em> ≟ &lt;n&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_nom']</em> ≟ &lt;np&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;gen&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;gen&gt;
+                                 </li>
+                                 
+                                 <li><em>sl[1]['a_func']</em> ≟ &lt;@ADVL→&gt;
+                                 </li>
+                                 
+                                 <li><em>sl[1]['a_func']</em> ≟ &lt;@APP-ADVL←&gt;
+                                 </li>
+                                 
+                                 <li><em>sl[1]['a_func']</em> ≟ &lt;@←ADVL&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;ess&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_px']</em> ≟ &lt;px1du&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px']</em> ≔ &lt;px1pl&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_px']</em> ≟ &lt;px2du&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px']</em> ≔ &lt;px2pl&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_px']</em> ≟ &lt;px3du&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_px']</em> ≔ &lt;px3pl&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nbr']</em> ≟ &lt;du&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nbr']</em> ≔ &lt;pl&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_qst']</em> ≟ &lt;qst&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_qst']</em> ≔ 
+                                 "+ko"
+                                 &lt;qst&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_prc']</em> ≟ &lt;prfprc&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_prc']</em> ≟ &lt;prsprc&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['whole']</em> ≔ <em>tl[1]['whole']</em>&lt;sg.nom&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_sggen.cmp&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_sggen.cmp_hyph.cmp&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ &lt;sg.gen.cmp&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_sgnom.cmp&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_sgnom.cmp_hyph.cmp&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ &lt;sg.nom.cmp&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_plgen.cmp&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_plgen.cmp_hyph.cmp&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ &lt;pl.gen.cmp&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_plnom.cmp&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_plnom.cmp_hyph.cmp&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ &lt;pl.nom.cmp&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_sgnom.cmp_splitr&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp_sggen.cmp_splitr&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ &lt;sg.nom&gt;
+                                 "$^-"
+                                 &lt;guio&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;adv&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;num&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;cmp.guio&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ &lt;sg.nom&gt;
+                                 "$^-"
+                                 &lt;guio&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cmp']</em> ≟ &lt;n.cmp&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ &lt;n.sg.nom.cmp&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_ess']</em> ≟ &lt;ess&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;n&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;num&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;np&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;prn&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;adj&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_ess']</em> ≔ &lt;sg.ess&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;adj&gt;
+                                 </li>
+                                 
+                                 <li><em>tl[1]['a_pos']</em> ≟ &lt;prn&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cmp']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_pass']</em> ≟ &lt;der_passs.vblex.iv&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_pass']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_pass']</em> ≟ &lt;der_passl.vblex.iv&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_pass']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+                  
+               </ol></code>
+            
+            
+            <h3>default-conversion2</h3>
+            <div>Parametres: 2</div><code>
+               <ol>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>default-conversion1($2)</li>
+                  
+               </ol></code>
+            
+            
+            <h3>default-conversion3</h3>
+            <div>Parametres: 3</div><code>
+               <ol>
+                  
+                  <li>default-conversion1($3)</li>
+                  
+                  <li>default-conversion1($2)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+               </ol></code>
+            
+            
+            <h3>default-conversion-nonfin1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     <ol>
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;vabess&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;inf3.sg.abe&gt;
+                              </li>
+                              <li>
+                                 let <em>tl[1]['a_attr']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                              <li>
+                                 let <em>tl[1]['a_adj']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;vgen&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;infma.sg.ins&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;ger&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;infe.sg.ine&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;inf&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;infa.sg.lat&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;actio.gen&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;der_minen.sg.tra&gt;
+                              </li>
+                              <li>
+                                 let <em>tl[1]['a_voice']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;actio.ine&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;der_minen.sg.ela&gt;
+                              </li>
+                              <li>
+                                 let <em>tl[1]['a_voice']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;actio.ess&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;infma.sg.ine&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;supn&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;infa.sg.tra&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_nonfin']</em> ≟ &lt;actio.nom&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_nonfin']</em> ≔ &lt;agprc.sg.nom&gt;
+                              </li>
+                              <li>
+                                 let <em>tl[1]['a_voice']</em> ≔ 
+                                 ""
+                                 
+                              </li>
+                           </ol>
+                        </li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            <h3>pcle-foc2</h3>
+            <div>Parametres: 2</div><code>
+               <ol>
+                  		
+                  <li>
+                     <ol>   
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 
+                                 <li><em>tl[2]['a_foc']</em> ≟ &lt;foc_gis&gt;
+                                 </li>
+                                 
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ 
+                                 <em>tl[1]['tags']</em>&lt;foc_kin&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 
+                                 <li><em>tl[2]['a_foc']</em> ≟ &lt;foc_han&gt;
+                                 </li>
+                                 
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ 
+                                 <em>tl[1]['tags']</em>&lt;foc_han&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 
+                                 <li><em>tl[2]['a_foc']</em> ≟ &lt;foc_ba&gt;
+                                 </li>
+                                 
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ 
+                                 <em>tl[1]['tags']</em>&lt;foc_pa&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        <li>elseif 
+                           <li>
+                              <ol>
+                                 
+                                 <li><em>tl[2]['a_foc']</em> ≟ &lt;foc_ge&gt;
+                                 </li>
+                                 
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['tags']</em> ≔ 
+                                 <em>tl[1]['tags']</em>&lt;foc_kin&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        		
+                     </ol>
+                  </li>    
+                  
+               </ol></code>  
+            
+            
+            <h3>num-nom1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  		
+                  <li>
+                     <ol>   
+                        
+                        <li>if 
+                           <li>
+                              <ol>
+                                 
+                                 <li><em>tl[1]['sg_num_cas']</em> ≟ &lt;sg.acc&gt;
+                                 </li>
+                                 
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;nom&gt;
+                              </li>
+                           </ol>
+                        </li>
+                        
+                        		
+                     </ol>
+                  </li>    
+                  
+               </ol></code>  
+            
+            
+            
+            
+            <h2>Rules</h2>
+            <p>The actual rules concerning stuff.</p>
+            
+            
+            <h3>REGLA: ADV</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>adv</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>adv
+                              &lt;SAdv&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            <h3>REGLA: ADJ</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>adj</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>handle-nominal-derivation1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>a
+                              &lt;SA&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: PRON</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>pron</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>prn
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            
+            <h3>REGLA: NOM-CMP</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>nom-cmp</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>handle-nominal-derivation1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            <h3>REGLA: NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>handle-nominal-derivation1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: NOM-CMP NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>nom-cmp</li>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags2($2$1)</li>
+                  
+                  <li>default-conversion2($2$1)</li>
+                  
+                  <li>handle-nominal-derivation2($2$1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol></ol>]<sub>n-n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            <h3>REGLA: ATTR NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>attr</li>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags2($2$1)</li>
+                  
+                  <li>default-conversion2($2$1)</li>
+                  
+                  	
+                  
+                  <li>handle-nominal-derivation2($2)</li>
+                  
+                  <li>concord-nominal2($2$1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b1</sub><br></li>
+                              <li>
+                                 <em>tl[2]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>a-n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: ATTR NOM-CMP NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>attr</li>
+               
+               <li>nom-cmp</li>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($2)</li>
+                  
+                  <li>remove-semtags2($3$1)</li>
+                  
+                  <li>default-conversion3($3$2$1)</li>
+                  
+                  <li>handle-nominal-derivation1($3)</li>
+                  
+                  <li>concord-nominal2($3$1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b1</sub><br></li>
+                           </ol>]<sub>a-n-n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            <h3>REGLA: ATTR ATTR NOM-CMP NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>attr</li>
+               
+               <li>attr</li>
+               
+               <li>nom-cmp</li>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($3)</li>
+                  
+                  <li>remove-semtags3($4$2$1)</li>
+                  
+                  <li>default-conversion1($3)</li>
+                  
+                  <li>default-conversion3($4$2$1)</li>
+                  
+                  <li>handle-nominal-derivation1($4)</li>
+                  
+                  <li>concord-nominal3($4$1$2)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b1</sub><br></li>
+                              <li>
+                                 <em>tl[2]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b2</sub><br></li>
+                           </ol>]<sub>a-a-n-n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: ATTR ATTR NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>attr</li>
+               
+               <li>attr</li>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags3($3$2$1)</li>
+                  
+                  <li>default-conversion3($3$2$1)</li>
+                  
+                  <li>handle-nominal-derivation1($3)</li>
+                  
+                  <li>concord-nominal3($3$1$2)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b1</sub><br></li>
+                              <li>
+                                 <em>tl[2]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b1</sub><br></li>
+                              <li>
+                                 <em>tl[3]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>a-a-n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: ATTR CNP ATTR NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>attr</li>
+               
+               <li>cnp</li>
+               
+               <li>attr</li>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>default-conversion1($2)</li>
+                  
+                  <li>remove-semtags3($4$3$1)</li>
+                  
+                  <li>default-conversion3($4$3$1)</li>
+                  
+                  <li>handle-nominal-derivation1($4)</li>
+                  
+                  <li>concord-nominal3($4$3$1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b1</sub><br></li>
+                              <li>
+                                 <em>tl[2]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b2</sub><br></li>
+                              <li>
+                                 <em>tl[3]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b3</sub><br></li>
+                              <li>
+                                 <em>tl[4]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>a-c-a-n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: ATTR CNP ATTR NOM-CMP NOM</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>attr</li>
+               
+               <li>cnp</li>
+               
+               <li>attr</li>
+               
+               <li>nom-cmp</li>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>default-conversion1($2)</li>
+                  
+                  <li>default-conversion1($4)</li>
+                  
+                  <li>remove-semtags1($4)</li>
+                  
+                  <li>remove-semtags3($5$3$1)</li>
+                  
+                  <li>default-conversion1($4)</li>
+                  
+                  <li>default-conversion3($5$3$1)</li>
+                  
+                  <li>handle-nominal-derivation1($5)</li>
+                  
+                  <li>concord-nominal3($5$3$1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b1</sub><br></li>
+                              <li>
+                                 <em>tl[2]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b2</sub><br></li>
+                              <li>
+                                 <em>tl[3]['whole']</em>
+                                 
+                              </li>
+                              <li><sub>b3</sub><br></li>
+                           </ol>]<sub>a-c-a-n
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <h3>REGLA: num-nomacc n-sg to n-par</h3>                                             
+            
+            <h4>Matching pattern:</h4>
+            <ol>                                        
+               
+               <li>num-nomacc</li>                 
+               
+               <li>n-sg-accgen</li>                   
+               
+            </ol>     
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>num-nom1($1)</li>
+                  
+                  <li>
+                     let <em>tl[1]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li> 
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li> 
+                  
+                  <li>
+                     let <em>tl[2]['a_cas']</em> ≔ &lt;par&gt;
+                  </li>
+                  
+                  <li>
+                     let <em>tl[2]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li> 
+                  
+                  <li>
+                     let <em>tl[2]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li> 
+                  
+                  <li>
+                     let <em>tl[2]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li> 
+                  		
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['lem']</em>    
+                                 <em>tl[1]['tags']</em>   
+                                 	        
+                              </li>
+                              <li><sub>b</sub><br></li>
+                              <li>
+                                 <em>tl[2]['whole']</em>   
+                                 		    
+                              </li>
+                           </ol>]<sub>num-noun
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>                                  
+             
+            
+            
+            
+            
+            
+            
+            <h3>REGLA: INF</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>inf</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>default-conversion-nonfin1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>v
+                              &lt;SV&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            <h3>REGLA: CONNEG-PRET</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>conneg-pret</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>&lt;ND&gt;
+                                 
+                              </li>
+                           </ol>]<sub>ii-conneg
+                              &lt;SV.NEG&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: PASS-PRC</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>pass-prc</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>convert-passive1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>v
+                              &lt;SV.PASS&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            <h3>REGLA: PASS-FIN</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>pass-fin</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>convert-passive1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>v
+                              &lt;SV.PASS&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: FIN</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>fin</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>v
+                              &lt;SV&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            
+            
+            <h3>REGLA: KO</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>qst</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>qst
+                              &lt;QST&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <h3>REGLA: DEFAULT</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>default</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtags1($1)</li>
+                  
+                  <li>default-conversion1($1)</li>
+                  
+                  <li>default-conversion-nonfin1($1)</li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>x
+                              &lt;SX&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: SENT</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>sent</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>sent
+                              &lt;SENT&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+                
+            
+            
+         </section>
+         <div id="footer">
+            Documentation for <a href="//github.com/apertium/apertium-fin-fkv/">
+               apertium-fin-fkv</a>
+            Generated with <a href="https://github.com/flammie/apevis-xslt">Flammie’s
+               apevis-xslt</a>.
+            
+         </div>
+      </div>
+   </body>
+</html>

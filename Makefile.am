@@ -2,6 +2,8 @@
 ## Makefile for fin-fkv
 ###############################################################################
 
+SUBDIRS=docs
+
 LANG1=fin
 LANG2=fkv
 PREFIX1=$(LANG1)-$(LANG2)
