@@ -25,6 +25,7 @@ TARGETS_COMMON = \
 	$(PREFIX2).autogen.hfst \
 	$(PREFIX2).autolex.bin \
 	$(PREFIX2).automorf.hfst \
+	$(PREFIX2).automorf-untrimmed.hfst \
 	$(PREFIX2).rlx.bin \
 	$(PREFIX2).t1x.bin \
 	$(PREFIX2).t2x.bin \
@@ -89,10 +90,15 @@ $(PREFIX1).automorf-untrimmed.hfst: .deps/$(LANG1).automorf.hfst
 # apertium-fin-fkv.fkv-fin.LR.att.gz
 # TODO: Make this use .und as well (but giella-fkv doesn't install any .und yet)
 #$(PREFIX2).automorf.hfst: $(AP_SRC2)/$(BASENAME).$(LANG1).LR.att.gz .deps/$(PREFIX2).autobil.prefixes .deps/punctuation.LR.hfst .deps/.d
-$(PREFIX2).automorf.hfst: $(AP_SRC2)/apertium-und.fkv-und.LR.att.gz .deps/$(PREFIX2).autobil.prefixes .deps/punctuation.LR.hfst .deps/.d
-	$(ZCAT) $(AP_SRC2)/apertium-und.fkv-und.LR.att.gz | hfst-txt2fst | hfst-union -2 .deps/punctuation.LR.hfst -o .deps/$(PREFIX2).automorf.untrimmed.hfst
+.deps/$(PREFIX2).automorf.untrimmed.hfst: $(AP_SRC2)/apertium-und.fkv-und.LR.att.gz .deps/$(PREFIX2).autobil.prefixes .deps/punctuation.LR.hfst .deps/.d
+	$(ZCAT) $(AP_SRC2)/apertium-und.fkv-und.LR.att.gz | hfst-txt2fst | hfst-union -2 .deps/punctuation.LR.hfst -o $@
+
+$(PREFIX2).automorf.hfst: .deps/$(PREFIX2).automorf.untrimmed.hfst
 	hfst-compose-intersect -1 .deps/$(PREFIX2).automorf.untrimmed.hfst -2 .deps/$(PREFIX2).autobil.prefixes -o .deps/$(PREFIX2).automorf.hfst
 	hfst-fst2fst -O .deps/$(PREFIX2).automorf.hfst -o $@
+
+$(PREFIX2).automorf-untrimmed.hfst: .deps/$(PREFIX2).automorf.untrimmed.hfst
+	hfst-fst2fst -w -i $< -o $@
 
 # fin->fkv gen
 # apertium-fkv.fkv.RL.att.gz
