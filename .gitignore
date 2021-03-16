@@ -14,6 +14,7 @@
 /missing
 /modes
 /*.mode
+/*.hfst
 /.deps
 /config.in
 /config
