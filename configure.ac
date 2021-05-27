@@ -91,7 +91,7 @@ AM_CONDITIONAL([CAN_SAXON], [test x$SAXON != xfalse])
 
 
 
-m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertium.m4 in ACLOCAL_PATH? See: http://wiki.apertium.org/wiki/Installation_troubleshooting])])
+m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertium.m4 in ACLOCAL_PATH? See: https://wiki.apertium.org/wiki/Installation_troubleshooting])])
 
 AP_CHECK_LING([1], [giella-fin])
 AP_CHECK_LING([2], [giella-fkv])
