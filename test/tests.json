@@ -1,0 +1,6 @@
+{
+    "fin-fkv": {
+        "input": "fin-fkv-input.txt",
+        "mode": "fin-fkv"
+    }
+}

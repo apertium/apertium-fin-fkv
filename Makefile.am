@@ -252,7 +252,4 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "Ja" | apertium -d . fin-est | tee .test-mt
-	@echo "Ja" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
+	apertium-regtest test
